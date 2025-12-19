@@ -1,0 +1,61 @@
+# Системные файлы
+# Системные файлы
+.DS_Store
+.git
+.gitignore
+.gitattributes
+.github
+.editorconfig
+.prettierrc.json
+
+# Зависимости
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Сборка
+dist
+coverage
+.nyc_output
+
+# Среда разработки
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Локальные файлы
+.env.local
+.env.*.local
+
+# Логи
+logs
+*.log
+
+# Тесты
+__tests__
+test
+tests
+*.spec.js
+*.test.js
+
+# Документация
+docs
+*.md
+LICENSE
+
+# Docker файлы
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Другие файлы, не нужные в продакшн-образе
+*.sh
+*.yml
+*.yaml
+*.toml
+*.lock
+*.config.js
+!vite.config.js
+!uno.config.js

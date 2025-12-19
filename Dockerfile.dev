@@ -1,0 +1,16 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Установка зависимостей для разработки
+COPY package*.json ./
+RUN npm install
+
+# Установка Vite глобально для быстрого запуска
+RUN npm install -g vite
+
+# Порт для разработки
+EXPOSE 5173
+
+# Команда для запуска в режиме разработки
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"] 

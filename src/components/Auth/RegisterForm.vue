@@ -65,7 +65,7 @@ const handleSubmit = async () => {
     name: name.value,
     email: email.value,
     password: password.value,
-    password_confirmation: passwordConfirm.value
+    confirm_password: passwordConfirm.value
   }
 
   const success = await userStore.register(userData)

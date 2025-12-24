@@ -13,7 +13,7 @@ docker stop boostmode-dev 2>/dev/null || true
 docker rm boostmode-dev 2>/dev/null || true
 
 # Сборка образа для разработки
-echo -e "${GREEN}Собираем Docker образ для разработки...${NC}"
+echo -e "${GREEN}Собираем Docker образ для разработки...$C}"
 docker build -t boostmode-dev -f Dockerfile.dev .
 
 # Запуск контейнера для разработки

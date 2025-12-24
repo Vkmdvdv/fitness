@@ -30,6 +30,3 @@ coverage
 *.tsbuildinfo
 
 .env
-
-# Backend (excluded from frontend branch)
-/backend/
